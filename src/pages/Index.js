@@ -6,7 +6,7 @@ const Index = (props) => {
     const loaded = () => {
         return props.cheeses.map((cheese) => (
             <div key={cheese._id} className="cheese">
-                <Link to={`/cheeses/${cheese._id}`}><h1>{cheese.name}</h1></Link>
+                <Link to={`/cheese/${cheese._id}`}><h1>{cheese.name}</h1></Link>
                 <img src={cheese.image} alt={cheese.name} />
                 <h3>{cheese.countryOfOrigin}</h3>
             </div>
